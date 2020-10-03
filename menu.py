@@ -25,7 +25,18 @@ def Personas():
     #nombre y edad. Mostrar cuantas personas son mayores de edad y cuantas son menores de edad
     #subir a github la segunda version de lo programado con el siguiente commit:
     #"Se agrego opcion 2 al menu de python"
-
+    sumaMenores=0
+    sumaMayores=0
+    veces=int(input("Cuantas personas necesita ingresar?: "))
+    for x in range(veces):
+        nombre=input("Ingrese nombre: ")
+        edad=int(input("Ingrese edad: "))
+        if(edad>=18):
+            sumaMayores=sumaMayores+1
+        else:
+            sumaMenores=sumaMenores+1
+    print("Las personas mayores de edad son: " ,sumaMayores)
+    print("Las personas menores de edad son: " ,sumaMenores)
     pausa=input("Presione una tecla para continuar")
 
 seguir=True 
